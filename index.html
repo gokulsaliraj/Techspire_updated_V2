@@ -143,17 +143,14 @@
     </ul>
   </div>
 <!-- ✅ Hero + Video + Purpose Section -->
-<section class="bg-white text-center pt-32 sm:pt-44 pb-20 text-neutral-900 overflow-hidden">
+<section class="bg-white text-center pt-32 sm:pt-44 pb-10 text-neutral-900 overflow-hidden">
   <div class="max-w-4xl mx-auto px-4 sm:px-6">
     
     <!-- ✅ Hero Headline -->
     <h1 class="font-light tracking-tight leading-tight mb-6 sm:mb-8 text-3xl sm:text-4xl md:text-5xl">
       <span class="block">Transforming Everyday Spaces with</span>
       <span class="block h-3 sm:h-4"></span>
-<span class="text-black drop-shadow-sm">
-  Intelligent Solutions
-</span>
-
+      <span class="text-black drop-shadow-sm">Intelligent Solutions</span>
     </h1>
 
     <!-- ✅ Subtext -->
@@ -175,40 +172,41 @@
     </a>
   </div>
 
-  <!-- ✅ Video with Cropped Ratio and Overlay -->
+  <!-- ✅ Video with Overlay -->
   <div class="relative w-full mt-16 sm:mt-20 overflow-hidden rounded-none sm:rounded-xl shadow-lg">
-    <!-- Video Wrapper with Cropped Height on Large Screens -->
     <div class="w-full h-[300px] sm:h-[400px] md:h-[380px] lg:h-[320px] xl:h-[300px] 2xl:h-[280px] relative">
+
       <!-- Video -->
       <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
-        <source src="./Untitled design (3).mp4" type="video/mp4" />
+        <source src="./1c37a37c-7f1c-4550-b312-58a02038ca85.mp4.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
-    <!-- ✅ Overlay Content - Glassmorphic Style -->
-<div class="absolute inset-0 flex items-center justify-center px-4 z-10">
-  <div class="backdrop-blur-md bg-white/10 border border-white/20 rounded-2xl shadow-xl p-6 sm:p-10 transition-all duration-300">
-    <div class="text-center text-white animate-fade-in">
-      <!-- Title -->
-      <h2 class="text-3xl sm:text-4xl md:text-5xl font-light text-black
-                 drop-shadow-[0_2px_20px_rgba(255,255,255,0.4)] 
-                 mb-3 sm:mb-4">
-        Built with Purpose
-      </h2>
+      <!-- ✅ Dark Purple Overlay -->
+      <div class="absolute inset-0 bg-gradient-to-br from-[#2b003d]/80 to-[#1a002a]/80 z-0"></div>
 
-      <!-- Subtext -->
-      <p class="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg max-w-2xl mx-auto font-light text-black
-                drop-shadow-[0_0_12px_rgba(0,0,0,0.4)] leading-relaxed tracking-wide animate-fade-slide-in">
-        We put technology to work for everyone by designing smart solutions that automate the mundane,
-        solve real-world problems, and make everyday life smarter, safer, and simpler.
-      </p>
-    </div>
-  </div>
-</div>
+      <!-- ✅ Glassmorphic Overlay Content -->
+      <div class="absolute inset-0 flex items-center justify-center px-4 z-10">
+        <div class="backdrop-blur-md bg-white/10 border border-white/20 rounded-2xl shadow-xl p-6 sm:p-10 transition-all duration-300">
+          <div class="text-center text-white animate-fade-in space-y-4">
+            <!-- Title -->
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-light text-white drop-shadow-md">
+              Built with Purpose
+            </h2>
+
+            <!-- Subtext -->
+            <p class="text-sm sm:text-base md:text-lg max-w-2xl mx-auto font-light text-white/90 leading-relaxed tracking-wide animate-fade-slide-in">
+              We put technology to work for everyone by designing smart solutions that automate the mundane,
+              solve real-world problems, and make everyday life smarter, safer, and simpler.
+            </p>
+          </div>
+        </div>
+      </div>
 
     </div>
   </div>
 </section>
+
 
 
 
@@ -229,15 +227,17 @@
     }
   }
 
-  .animated-gradient {
-    background: linear-gradient(270deg,
-        #7e22ce,
-        #2563eb,
-        #06b6d4,
-        #38bdf8);
-    background-size: 400% 400%;
-    animation: gradientShift 8s ease infinite;
-  }
+.animated-gradient {
+  background: linear-gradient(270deg,
+    #3b0764, /* deep purple */
+    #6b21a8, /* violet */
+    #7e22ce, /* darker purple */
+    #9333ea  /* indigo purple */
+  );
+  background-size: 400% 400%;
+  animation: gradientShift 8s ease infinite;
+}
+
 </style>
 
 
