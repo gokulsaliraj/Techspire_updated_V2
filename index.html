@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Techspire</title>
-  <!-- ✅ Font Awesome Free CDN (v6.5.1) -->
+  <!-- Font Awesome Free CDN (v6.5.1) -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-i2n1XeWqYNYlK3xv3tpzQJY1s0E9xS0hz7hJ7ZoZSC6En6MeD4BNCayBHZkYX4rJw2T1vIuKUCCNNO7CnIkR2w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <script src="https://cdn.tailwindcss.com"></script>
@@ -31,64 +31,6 @@
 </head>
 
 <body class="bg-white text-neutral-900">
-<!-- Preloader -->
-<!-- Preloader -->
-<div id="preloader" class="fixed inset-0 bg-white z-[9999] flex items-center justify-center">
-  <div class="dots-wave space-x-2 flex">
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-  </div>
-</div>
-
-<style>
- /* Dots Wave Loader */
-.dots-wave .dot {
-  width: 12px;
-  height: 12px;
-  background-color: #7e22ce; /* violet */
-  border-radius: 50%;
-  display: inline-block;
-  animation: wave 1.2s infinite ease-in-out;
-}
-
-.dots-wave .dot:nth-child(1) { animation-delay: 0s; }
-.dots-wave .dot:nth-child(2) { animation-delay: 0.1s; }
-.dots-wave .dot:nth-child(3) { animation-delay: 0.2s; }
-.dots-wave .dot:nth-child(4) { animation-delay: 0.3s; }
-.dots-wave .dot:nth-child(5) { animation-delay: 0.4s; }
-
-@keyframes wave {
-  0%, 60%, 100% {
-    transform: initial;
-  }
-  30% {
-    transform: translateY(-10px);
-  }
-}
-
-/* Fade out animation */
-#preloader.fade-out {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s ease, visibility 0.5s;
-}
-
-</style>
-
-<script>
-  window.addEventListener("load", function () {
-    const preloader = document.getElementById("preloader");
-    preloader.classList.add("fade-out");
-
-    setTimeout(() => {
-      preloader.remove();
-    }, 500); // match transition duration
-  });
-</script>
-
 
   <!-- Navbar -->
   <nav id="navbar" class="fixed top-5 left-1/2 transform -translate-x-1/2 
@@ -142,26 +84,26 @@
       </li>
     </ul>
   </div>
-<!-- ✅ Hero + Video + Purpose Section -->
+<!-- Hero + Video + Purpose Section -->
 <section class="bg-white text-center pt-32 sm:pt-44 pb-10 text-neutral-900 overflow-hidden">
   <div class="max-w-4xl mx-auto px-4 sm:px-6">
     
-    <!-- ✅ Hero Headline -->
+    <!-- Hero Headline -->
     <h1 class="font-light tracking-tight leading-tight mb-6 sm:mb-8 text-3xl sm:text-4xl md:text-5xl">
       <span class="block">Transforming Everyday Spaces with</span>
       <span class="block h-3 sm:h-4"></span>
       <span class="text-black drop-shadow-sm">Intelligent Solutions</span>
     </h1>
 
-    <!-- ✅ Subtext -->
+    <!-- Subtext -->
     <p class="text-base sm:text-lg md:text-xl text-neutral-600 font-light mb-10 leading-relaxed">
       Delivering solutions that make life smarter, safer, and simpler.
     </p>
 
-    <!-- ✅ CTA Button -->
+    <!-- CTA Button -->
     <a href="#solutions"
       class="inline-flex items-center gap-2 px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg font-medium text-white 
-      bg-gradient-to-r from-blue-900 via-purple-700 to-pink-600 animated-gradient
+       animated-gradient
       hover:scale-105 hover:-translate-y-1 transition-all duration-300 ease-in-out 
       shadow-md hover:shadow-xl group">
       Explore Solutions
@@ -172,33 +114,211 @@
     </a>
   </div>
 
-  <!-- ✅ Video with Overlay -->
-  <div class="relative w-full mt-16 sm:mt-20 overflow-hidden rounded-none sm:rounded-xl shadow-lg">
-    <div class="w-full h-[300px] sm:h-[400px] md:h-[380px] lg:h-[320px] xl:h-[300px] 2xl:h-[280px] relative">
+  <!-- Video with Overlay -->
+<div class="relative w-full mt-16 sm:mt-20 overflow-hidden rounded-none sm:rounded-xl shadow-lg">
+  <div class="w-full h-[300px] sm:h-[400px] md:h-[380px] lg:h-[320px] xl:h-[300px] 2xl:h-[280px] relative">
 
-      <!-- Video -->
-      <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
-        <source src="./1c37a37c-7f1c-4550-b312-58a02038ca85.mp4.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+    <!-- Video -->
+    <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
+      <source src="./12681523_1280_720_30fps.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
 
-      <!-- ✅ Dark Purple Overlay -->
-      <div class="absolute inset-0 bg-gradient-to-br from-[#2b003d]/80 to-[#1a002a]/80 z-0"></div>
+    <!-- Blue to Cyan Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-br from-[#002983]/80 to-[#007e94]/80 z-0"></div>
 
-      <!-- ✅ Glassmorphic Overlay Content -->
-      <div class="absolute inset-0 flex items-center justify-center px-4 z-10">
-        <div class="backdrop-blur-md bg-white/10 border border-white/20 rounded-2xl shadow-xl p-6 sm:p-10 transition-all duration-300">
-          <div class="text-center text-white animate-fade-in space-y-4">
-            <!-- Title -->
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-light text-white drop-shadow-md">
-              Built with Purpose
-            </h2>
+    <!-- Glassmorphic Overlay Content -->
+    <div class="absolute inset-0 flex items-center justify-center px-4 z-10">
+      <div class="backdrop-blur-md bg-white/10 border border-white/20 rounded-2xl shadow-xl p-6 sm:p-10 transition-all duration-300">
+        <div class="text-center text-white animate-fade-in space-y-4">
+          <!-- Title -->
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-light text-white drop-shadow-md">
+            Built with Purpose
+          </h2>
 
-            <!-- Subtext -->
-            <p class="text-sm sm:text-base md:text-lg max-w-2xl mx-auto font-light text-white/90 leading-relaxed tracking-wide animate-fade-slide-in">
-              We put technology to work for everyone by designing smart solutions that automate the mundane,
-              solve real-world problems, and make everyday life smarter, safer, and simpler.
-            </p>
+          <!-- Subtext -->
+          <p class="text-sm sm:text-base md:text-lg max-w-2xl mx-auto font-light text-white/90 leading-relaxed tracking-wide animate-fade-slide-in">
+            We put technology to work for everyone by designing smart solutions that automate the mundane,
+            solve real-world problems, and make everyday life smarter, safer, and simpler.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</section>
+
+
+
+
+
+<!-- Gradient Animation CSS -->
+<style>
+  @keyframes gradientShift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .animated-gradient {
+    background: linear-gradient(135deg,
+#0048e4, #06b6d4
+    );
+
+    
+    background-size: 400% 400%;
+    animation: gradientShift 8s ease infinite;
+  }
+</style>
+
+<section id="core-capabilities" class="py-16 px-6 text-[#111] bg-white">
+  <div class="max-w-7xl mx-auto">
+
+    <!-- Section Header -->
+    <div class="text-center mb-14 underline-container" data-gsap>
+      <h2 class="text-3xl sm:text-4xl font-light text-black mb-4">
+        Explore Our Core
+        <span class="relative inline-block pb-3">
+          <span class="title-main">Capabilities</span>
+          <span class="scroll-underline absolute left-0 bottom-0 h-[3px] w-full bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full"></span>
+        </span>
+      </h2>
+      <p class="text-gray-700 text-base sm:text-lg font-light max-w-2xl mx-auto">
+        We provide a flexible set of intelligent capabilities designed to enhance safety, access, and control across everyday spaces.
+      </p>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+      
+      <!-- 1. License Plate Recognition -->
+      <div class="relative group bg-white/80 rounded-3xl border border-gray-200 shadow-md hover:shadow-2xl transition-all duration-500 overflow-hidden hover:-translate-y-1" data-gsap>
+        <div class="absolute inset-0 bg-gradient-to-br from-white/0 to-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-10"></div>
+        <div class="aspect-[4/3] bg-white overflow-hidden">
+          <img src="./23 (1).png" alt="License Plate Recognition" class="w-full h-full object-contain p-5 group-hover:scale-105 transition-transform duration-500 ease-in-out" />
+        </div>
+        <div class="p-5 space-y-2 relative z-20">
+          <h3 class="text-xl sm:text-2xl font-medium text-gray-900">License Plate Recognition</h3>
+          <p class="text-base text-gray-700 font-light">Automate vehicle entry and create secure access logs.</p>
+        </div>
+      </div>
+
+      <!-- 2. Face Recognition -->
+      <div class="relative group bg-white/80 rounded-3xl border border-gray-200 shadow-md hover:shadow-2xl transition-all duration-500 overflow-hidden hover:-translate-y-1" data-gsap>
+        <div class="absolute inset-0 bg-gradient-to-br ..."></div>
+        <div class="aspect-[4/3] bg-white overflow-hidden">
+          <img src="./11668804_20945796.jpg" alt="Face Recognition" class="w-full h-full object-contain p-5 group-hover:scale-105 transition-transform duration-500" />
+        </div>
+        <div class="p-5 space-y-2 relative z-20">
+          <h3 class="text-xl sm:text-2xl font-medium text-gray-900">Face Recognition</h3>
+          <p class="text-base text-gray-700 font-light">Touchless identity verification and monitoring.</p>
+        </div>
+      </div>
+
+      <!-- 3. Smart Gate Access -->
+      <div class="relative group bg-white/80 rounded-3xl border border-gray-200 shadow-md hover:shadow-2xl transition-all duration-500 overflow-hidden hover:-translate-y-1" data-gsap>
+        <div class="absolute inset-0 bg-gradient-to-br ..."></div>
+        <div class="aspect-[4/3] bg-white overflow-hidden">
+          <img src="./10780447_19199448.jpg" alt="Smart Gate Access" class="w-full h-full object-contain p-5 group-hover:scale-105 transition-transform duration-500" />
+        </div>
+        <div class="p-5 space-y-2 relative z-20">
+          <h3 class="text-xl sm:text-2xl font-medium text-gray-900">Smart Gate Access</h3>
+          <p class="text-base text-gray-700 font-light">Open or restrict gates automatically using verified identities.</p>
+        </div>
+      </div>
+
+      <!-- 4. CCTV Monitoring -->
+      <div class="relative group bg-white/80 rounded-3xl border border-gray-200 shadow-md hover:shadow-2xl transition-all duration-500 overflow-hidden hover:-translate-y-1" data-gsap>
+        <div class="absolute inset-0 bg-gradient-to-br ..."></div>
+        <div class="aspect-[4/3] bg-white overflow-hidden">
+          <img src="./12290872_Wavy_Tech-09_Single-01.jpg" alt="CCTV Monitoring" class="w-full h-full object-contain p-5 group-hover:scale-105 transition-transform duration-500" />
+        </div>
+        <div class="p-5 space-y-2 relative z-20">
+          <h3 class="text-xl sm:text-2xl font-medium text-gray-900">CCTV Monitoring</h3>
+          <p class="text-base text-gray-700 font-light">Live feeds, anomaly detection, and alerts in real-time.</p>
+        </div>
+      </div>
+
+      <!-- 5. Parking Management -->
+      <div class="relative group bg-white/80 rounded-3xl border border-gray-200 shadow-md hover:shadow-2xl transition-all duration-500 overflow-hidden hover:-translate-y-1" data-gsap>
+        <div class="absolute inset-0 bg-gradient-to-br ..."></div>
+        <div class="aspect-[4/3] bg-white overflow-hidden">
+          <img src="./10782867_19199286.jpg" alt="Parking Management" class="w-full h-full object-contain p-5 group-hover:scale-105 transition-transform duration-500" />
+        </div>
+        <div class="p-5 space-y-2 relative z-20">
+          <h3 class="text-xl sm:text-2xl font-medium text-gray-900">Parking Management</h3>
+          <p class="text-base text-gray-700 font-light">Log usage, manage availability, and enforce rules seamlessly.</p>
+        </div>
+      </div>
+
+      <!-- 6. Visitor Management -->
+      <div class="relative group bg-white/80 rounded-3xl border border-gray-200 shadow-md hover:shadow-2xl transition-all duration-500 overflow-hidden hover:-translate-y-1" data-gsap>
+        <div class="absolute inset-0 bg-gradient-to-br ..."></div>
+        <div class="aspect-[4/3] bg-white overflow-hidden">
+          <img src="./11235583_10811.jpg" alt="Visitor Management" class="w-full h-full object-contain p-5 group-hover:scale-105 transition-transform duration-500" />
+        </div>
+        <div class="p-5 space-y-2 relative z-20">
+          <h3 class="text-xl sm:text-2xl font-medium text-gray-900">Visitor Management</h3>
+          <p class="text-base text-gray-700 font-light">Check-in with face, QR, or license plate for smooth access.</p>
+        </div>
+      </div>
+
+      <!-- 7. Virtual Patrolling -->
+      <div class="relative group bg-white/80 rounded-3xl border border-gray-200 shadow-md hover:shadow-2xl transition-all duration-500 overflow-hidden hover:-translate-y-1" data-gsap>
+        <div class="absolute inset-0 bg-gradient-to-br ..."></div>
+        <div class="aspect-[4/3] bg-white overflow-hidden">
+          <img src="./133748214_10221134.jpg" alt="Virtual Patrolling" class="w-full h-full object-contain p-5 group-hover:scale-105 transition-transform duration-500" />
+        </div>
+        <div class="p-5 space-y-2 relative z-20">
+          <h3 class="text-xl sm:text-2xl font-medium text-gray-900">Virtual Patrolling</h3>
+          <p class="text-base text-gray-700 font-light">Simulate security patrols using AI-powered video analytics.</p>
+        </div>
+      </div>
+
+      <!-- 8. Workflow Automation -->
+      <div class="relative group bg-white/80 rounded-3xl border border-gray-200 shadow-md hover:shadow-2xl transition-all duration-500 overflow-hidden hover:-translate-y-1" data-gsap>
+        <div class="absolute inset-0 bg-gradient-to-br ..."></div>
+        <div class="aspect-[4/3] bg-white overflow-hidden">
+          <img src="./10780380_19199000.jpg" alt="Workflow Automation" class="w-full h-full object-contain p-5 group-hover:scale-105 transition-transform duration-500" />
+        </div>
+        <div class="p-5 space-y-2 relative z-20">
+          <h3 class="text-xl sm:text-2xl font-medium text-gray-900">Workflow Automation</h3>
+          <p class="text-base text-gray-700 font-light">Respond to events with automated actions and alert systems.</p>
+        </div>
+      </div>
+
+      <!-- 9. Sensor Integration -->
+      <div class="lg:col-start-2">
+        <div class="relative group bg-white/80 rounded-3xl border border-gray-200 shadow-md hover:shadow-2xl transition-all duration-500 overflow-hidden hover:-translate-y-1" data-gsap>
+          <div class="absolute inset-0 bg-gradient-to-br ..."></div>
+          <div class="aspect-[4/3] bg-white overflow-hidden">
+            <img src="./12085699_20944195.jpg" alt="Sensor Integration" class="w-full h-full object-contain p-5 group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          <div class="p-5 space-y-2 relative z-20">
+            <h3 class="text-xl sm:text-2xl font-medium text-gray-900">Sensor Integration</h3>
+            <p class="text-base text-gray-700 font-light">Use smart sensors to trigger real-time actions and data logs.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 10. Control Panel & Updates -->
+      <div class="lg:col-start-3">
+        <div class="relative group bg-white/80 rounded-3xl border border-gray-200 shadow-md hover:shadow-2xl transition-all duration-500 overflow-hidden hover:-translate-y-1" data-gsap>
+          <div class="absolute inset-0 bg-gradient-to-br ..."></div>
+          <div class="aspect-[4/3] bg-white overflow-hidden">
+            <img src="./10780290_19198937.jpg" alt="Control Panel and Updates" class="w-full h-full object-contain p-5 group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          <div class="p-5 space-y-2 relative z-20">
+            <h3 class="text-xl sm:text-2xl font-medium text-gray-900">Control Panel</h3>
+            <p class="text-base text-gray-700 font-light">Monitor everything that matters from one connected view.</p>
           </div>
         </div>
       </div>
@@ -207,187 +327,13 @@
   </div>
 </section>
 
-
-
-
-
-<!-- ✅ Gradient Animation CSS -->
-<style>
-  @keyframes gradientShift {
-    0% {
-      background-position: 0% 50%;
-    }
-
-    50% {
-      background-position: 100% 50%;
-    }
-
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-
-.animated-gradient {
-  background: linear-gradient(270deg,
-    #3b0764, /* deep purple */
-    #6b21a8, /* violet */
-    #7e22ce, /* darker purple */
-    #9333ea  /* indigo purple */
-  );
-  background-size: 400% 400%;
-  animation: gradientShift 8s ease infinite;
-}
-
-</style>
-
-
-
-<section id="core-capabilities" class="py-10 px-6 text-[#111] bg-white">
-  <div class="max-w-7xl mx-auto">
-    
-    <!-- Header -->
-    <div class="text-center mb-12 underline-container" data-gsap>
-        <h2 class="text-3xl sm:text-4xl font-light text-black mb-4">
-        Explore Our Core
-      <span class="relative inline-block pb-3">
-        <span class="title-main">Capabilities</span>
-        <span class="scroll-underline absolute left-0 bottom-0 h-[3px] w-full bg-gradient-to-r from-indigo-500 to-violet-500 rounded-full"></span>
-      </span>
-    </h2>
-
-
-      <p class="text-gray-700 text-base sm:text-lg font-light max-w-2xl mx-auto">
-        We provide a flexible set of intelligent capabilities designed to enhance safety, access, and control across everyday spaces.
-      </p>
-    </div>
-
-    <!-- Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-      
-      <!-- Card 1 -->
-      <div class="relative rounded-3xl bg-white/70 backdrop-blur-xl border border-gray-200 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] transition-all hover:-translate-y-1 hover:shadow-xl overflow-hidden group" data-gsap>
-        <div class="relative aspect-[4/3] overflow-hidden">
-          <img src="./7402205_3624740.jpg" alt="License Plate Recognition" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 ease-in-out" />
-        </div>
-        <div class="p-6 space-y-4">
-          <h3 class="text-xl sm:text-2xl font-medium text-gray-900">License Plate Recognition</h3>
-          <p class="text-base text-gray-700 font-light">Automate vehicle entry and create secure access logs.</p>
-        </div>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="relative rounded-3xl bg-white/70 backdrop-blur-xl border border-gray-200 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] transition-all hover:-translate-y-1 hover:shadow-xl overflow-hidden group" data-gsap>
-        <div class="relative aspect-[4/3] overflow-hidden">
-          <img src="./11668804_20945796.jpg" alt="Face Recognition" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" />
-        </div>
-        <div class="p-6 space-y-4">
-          <h3 class="text-xl sm:text-2xl font-medium text-gray-900">Face Recognition</h3>
-          <p class="text-base text-gray-700 font-light">Touchless identity verification and monitoring.</p>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="relative rounded-3xl bg-white/70 backdrop-blur-xl border border-gray-200 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] transition-all hover:-translate-y-1 hover:shadow-xl overflow-hidden group" data-gsap>
-        <div class="relative aspect-[4/3] overflow-hidden">
-          <img src="./10780447_19199448.jpg" alt="Smart Gate Access" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" />
-        </div>
-        <div class="p-6 space-y-4">
-          <h3 class="text-xl sm:text-2xl font-medium text-gray-900">Smart Gate Access</h3>
-          <p class="text-base text-gray-700 font-light">Open or restrict gates automatically using verified identities.</p>
-        </div>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="relative rounded-3xl bg-white/70 backdrop-blur-xl border border-gray-200 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] transition-all hover:-translate-y-1 hover:shadow-xl overflow-hidden group" data-gsap>
-        <div class="relative aspect-[4/3] overflow-hidden">
-          <img src="./12290872_Wavy_Tech-09_Single-01.jpg" alt="CCTV Monitoring" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" />
-        </div>
-        <div class="p-6 space-y-4">
-          <h3 class="text-xl sm:text-2xl font-medium text-gray-900">CCTV Monitoring</h3>
-          <p class="text-base text-gray-700 font-light">Live feeds, anomaly detection, and alerts in real-time.</p>
-        </div>
-      </div>
-
-      <!-- Card 5 -->
-      <div class="relative rounded-3xl bg-white/70 backdrop-blur-xl border border-gray-200 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] transition-all hover:-translate-y-1 hover:shadow-xl overflow-hidden group" data-gsap>
-        <div class="relative aspect-[4/3] overflow-hidden">
-          <img src="./10782867_19199286.jpg" alt="Parking Management" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" />
-        </div>
-        <div class="p-6 space-y-4">
-          <h3 class="text-xl sm:text-2xl font-medium text-gray-900">Parking Management</h3>
-          <p class="text-base text-gray-700 font-light">Log usage, manage availability, and enforce rules seamlessly.</p>
-        </div>
-      </div>
-
-      <!-- Card 6 -->
-      <div class="relative rounded-3xl bg-white/70 backdrop-blur-xl border border-gray-200 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] transition-all hover:-translate-y-1 hover:shadow-xl overflow-hidden group" data-gsap>
-        <div class="relative aspect-[4/3] overflow-hidden">
-          <img src="./11235583_10811.jpg" alt="Visitor Management" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" />
-        </div>
-        <div class="p-6 space-y-4">
-          <h3 class="text-xl sm:text-2xl font-medium text-gray-900">Visitor Management</h3>
-          <p class="text-base text-gray-700 font-light">Check-in with face, QR, or license plate for smooth access.</p>
-        </div>
-      </div>
-
-      <!-- Card 7 -->
-      <div class="relative rounded-3xl bg-white/70 backdrop-blur-xl border border-gray-200 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] transition-all hover:-translate-y-1 hover:shadow-xl overflow-hidden group" data-gsap>
-        <div class="relative aspect-[4/3] overflow-hidden">
-          <img src="./133748214_10221134.jpg" alt="Virtual Patrolling" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" />
-        </div>
-        <div class="p-6 space-y-4">
-          <h3 class="text-xl sm:text-2xl font-medium text-gray-900">Virtual Patrolling</h3>
-          <p class="text-base text-gray-700 font-light">Simulate security patrols using AI-powered video analytics.</p>
-        </div>
-      </div>
-
-      <!-- Card 8 -->
-      <div class="relative rounded-3xl bg-white/70 backdrop-blur-xl border border-gray-200 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] transition-all hover:-translate-y-1 hover:shadow-xl overflow-hidden group" data-gsap>
-        <div class="relative aspect-[4/3] overflow-hidden">
-          <img src="./10780380_19199000.jpg" alt="Workflow Automation" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" />
-        </div>
-        <div class="p-6 space-y-4">
-          <h3 class="text-xl sm:text-2xl font-medium text-gray-900">Workflow Automation</h3>
-          <p class="text-base text-gray-700 font-light">Respond to events with automated actions and alert systems.</p>
-        </div>
-      </div>
-
-      <!-- Card 9 -->
-      <div class="relative rounded-3xl bg-white/70 backdrop-blur-xl border border-gray-200 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] transition-all hover:-translate-y-1 hover:shadow-xl overflow-hidden group" data-gsap>
-        <div class="relative aspect-[4/3] overflow-hidden">
-          <img src="./12085699_20944195.jpg" alt="Sensor Integration" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" />
-        </div>
-        <div class="p-6 space-y-4">
-          <h3 class="text-xl sm:text-2xl font-medium text-gray-900">Sensor Integration</h3>
-          <p class="text-base text-gray-700 font-light">Use smart sensors to trigger real-time actions and data logs.</p>
-        </div>
-      </div>
-
-      <!-- Card 10 - Centered on last row -->
-      <div class="relative rounded-3xl bg-white/70 backdrop-blur-xl border border-gray-200 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] transition-all hover:-translate-y-1 hover:shadow-xl overflow-hidden group lg:col-start-2" data-gsap>
-        <div class="relative aspect-[4/3] overflow-hidden">
-          <img src="./10780290_19198937.jpg" alt="Dashboards & Notifications" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" />
-        </div>
-        <div class="p-6 space-y-4">
-          <h3 class="text-xl sm:text-2xl font-medium text-gray-900">Dashboards & Notifications</h3>
-          <p class="text-base text-gray-700 font-light">Monitor everything that matters from one connected view.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-
 <section id="solutions" class="py-10 px-6 bg-white">
   <!-- Header -->
   <div class="text-center mb-12 underline-container" data-gsap>
     <h2 class="text-3xl sm:text-4xl font-light text-black mb-4">
       <span class="relative inline-block pb-3">
         <span class="title-main">Solutions</span>
-        <span class="scroll-underline absolute left-0 bottom-0 h-[3px] w-full bg-gradient-to-r from-indigo-500 to-violet-500 rounded-full"></span>
+        <span class="scroll-underline absolute left-0 bottom-0 h-[3px] w-full bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full"></span>
       </span>
       in Action
     </h2>
@@ -396,8 +342,8 @@
     </p>
   </div>
 
-  <!-- Cards Grid -->
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
+  <!-- Cards Grid: 4 in one row on large screens -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
     
     <!-- KiDQ -->
     <div class="relative rounded-2xl bg-white/80 backdrop-blur-md border border-gray-200 shadow-md hover:shadow-xl transition-all hover:-translate-y-1 group overflow-hidden" data-gsap>
@@ -415,8 +361,6 @@
           <li>Vehicle & guardian recognition</li>
           <li>Real-time alerts</li>
         </ul>
-        <div class="absolute bottom-3 right-4">
-        </div>
       </div>
     </div>
 
@@ -435,8 +379,6 @@
           <li>Live video, patrols & alerts</li>
           <li>Task routing to field teams</li>
         </ul>
-        <div class="absolute bottom-3 right-4">
-        </div>
       </div>
     </div>
 
@@ -455,8 +397,6 @@
           <li>License plate verification</li>
           <li>Entry/exit tracking</li>
         </ul>
-        <div class="absolute bottom-3 right-4">
-        </div>
       </div>
     </div>
 
@@ -475,15 +415,11 @@
           <li>QR / face / plate check-in</li>
           <li>Real-time visitor logs</li>
         </ul>
-        <div class="absolute bottom-3 right-4">
-        </div>
       </div>
     </div>
 
   </div>
 </section>
-
-
 
 
 <section id="spaces" class="py-10 px-6 bg-white text-[#111]">
@@ -888,7 +824,8 @@ document.addEventListener('DOMContentLoaded', () => {
 <style>
 .footer-section {
   position: relative;
-  background: linear-gradient(135deg, #1f1b4d, #3b2e8f, #6d28d9);
+background: linear-gradient(135deg, #002983, #002394, #007e94);
+
   background-size: 300% 300%;
   animation: gradientMove 8s ease infinite;
   color: #f9fafb;
