@@ -406,10 +406,10 @@ Want to see what’s possible?
 
 
 
-
+<!-- 
 
 <section id="solutions" class="py-20 px-6 bg-white relative">
-  <!-- Header -->
+
     <div class="text-center mb-14 underline-container" data-gsap>
       <h2 class="text-3xl sm:text-4xl font-light text-black mb-4">
         <span class="relative inline-block pb-3">
@@ -423,96 +423,89 @@ Want to see what’s possible?
       </p>
     </div>
 
-  <!-- Cards Grid -->
+
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
 
-    <!-- KiDQ -->
-    <div class="relative flex flex-col h-full rounded-3xl overflow-hidden border border-white/20 backdrop-blur-xl bg-white/30 shadow-lg transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl group">
-      <div class="relative aspect-[4/3] overflow-hidden">
-        <img src="./2151111276.jpg" alt="KiDQ" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" />
-      </div>
-      <div class="flex flex-col flex-grow p-6 relative z-10">
-        <h3 class="text-xl sm:text-2xl font-medium text-gray-900 mb-3 transition-colors duration-300 group-hover:text-blue-600">
-          KiDQ – Smart School Pickup
-        </h3>
-        <ul class="list-disc list-inside text-base text-gray-700 font-light space-y-1 flex-grow">
-          <li>Accelerate and secure student dispersal</li>
-          <li>Recognise vehicles and guardians automatically</li>
-          <li>Receive real-time notifications and status updates</li>
-        </ul>
-      </div>
-      <div class="p-4 border-t border-white/20 flex flex-wrap gap-2 bg-white/50 backdrop-blur-md">
-        <span class="px-3 py-1 text-[11px] rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-medium shadow-sm shadow-blue-300/40">License Plate Recognition</span>
-        <span class="px-3 py-1 text-[11px] rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-medium shadow-sm shadow-blue-300/40">Smart Gate Access</span>
-        <span class="px-3 py-1 text-[11px] rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-medium shadow-sm shadow-blue-300/40">Workflow Automation</span>
-      </div>
-      <div class="absolute inset-0 rounded-3xl border-2 border-transparent group-hover:border-white/20 transition-all duration-500"></div>
-      <div class="absolute inset-0 rounded-3xl bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 group-hover:opacity-100 animate-shine"></div>
-    </div>
+<div class="relative flex flex-col h-full rounded-3xl overflow-hidden border border-white/20 backdrop-blur-xl bg-white/30 shadow-lg transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl group">
+  <div class="relative aspect-[4/3] overflow-hidden">
+    <img src="./2151111276.jpg" alt="KiDQ" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" />
+  </div>
+  <div class="flex flex-col flex-grow p-6 relative z-10">
+    <h3 class="text-xl sm:text-2xl font-medium text-gray-900 mb-3 transition-colors duration-300 group-hover:text-blue-600">
+      KiDQ <span class="card-subtitle">Smart School Pickup</span>
+    </h3>
+    <ul class="list-disc list-inside text-base text-gray-700 font-light space-y-1 flex-grow">
+      <li>Accelerate and secure student dispersal</li>
+      <li>Recognise vehicles and guardians automatically</li>
+      <li>Receive real-time notifications and status updates</li>
+    </ul>
+  </div>
+  <div class="absolute inset-0 rounded-3xl border-2 border-transparent group-hover:border-white/20 transition-all duration-500"></div>
+  <div class="absolute inset-0 rounded-3xl bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 group-hover:opacity-100 animate-shine"></div>
+</div>
 
-    <!-- WatchTower -->
+<style>
+  .card-subtitle {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #111827;
+    letter-spacing: 0.02em;
+    margin-top: 0.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+</style>
+
+
+
     <div class="relative flex flex-col h-full rounded-3xl overflow-hidden border border-white/20 backdrop-blur-xl bg-white/30 shadow-lg transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl group">
       <div class="relative aspect-[4/3] overflow-hidden">
         <img src="./2151908090.jpg" alt="WatchTower" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" />
       </div>
       <div class="flex flex-col flex-grow p-6 relative z-10">
         <h3 class="text-xl sm:text-2xl font-medium text-gray-900 mb-3 transition-colors duration-300 group-hover:text-purple-600">
-          WatchTower – AI Command Centre
+          WatchTower <span class="card-subtitle">AI Command Centre</span>
         </h3>
         <ul class="list-disc list-inside text-base text-gray-700 font-light space-y-1 flex-grow">
           <li>Consolidate live video, patrol routes and alerts</li>
           <li>Automatically route tasks to field teams</li>
         </ul>
       </div>
-      <div class="p-4 border-t border-white/20 flex flex-wrap gap-2 bg-white/50 backdrop-blur-md">
-        <span class="px-3 py-1 text-[11px] rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-medium shadow-sm shadow-purple-300/40">CCTV Monitoring</span>
-        <span class="px-3 py-1 text-[11px] rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-medium shadow-sm shadow-purple-300/40">Virtual Patrolling</span>
-        <span class="px-3 py-1 text-[11px] rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-medium shadow-sm shadow-purple-300/40">Workflow Automation</span>
-      </div>
       <div class="absolute inset-0 rounded-3xl border-2 border-transparent group-hover:border-white/20 transition-all duration-500"></div>
       <div class="absolute inset-0 rounded-3xl bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 group-hover:opacity-100 animate-shine"></div>
     </div>
 
-    <!-- GatePass -->
+
     <div class="relative flex flex-col h-full rounded-3xl overflow-hidden border border-white/20 backdrop-blur-xl bg-white/30 shadow-lg transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl group">
       <div class="relative aspect-[4/3] overflow-hidden">
         <img src="./driving-night-touch-screen-controls-car-generated-by-ai.jpg" alt="GatePass" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" />
       </div>
       <div class="flex flex-col flex-grow p-6 relative z-10">
         <h3 class="text-xl sm:text-2xl font-medium text-gray-900 mb-3 transition-colors duration-300 group-hover:text-green-600">
-          GatePass – Smart Access & Parking
+          GatePass <span class="card-subtitle">Smart Access & Parking</span>
         </h3>
         <ul class="list-disc list-inside text-base text-gray-700 font-light space-y-1 flex-grow">
           <li>Verify license plates for authorised entry</li>
           <li>Track entry and exit in real time</li>
         </ul>
       </div>
-      <div class="p-4 border-t border-white/20 flex flex-wrap gap-2 bg-white/50 backdrop-blur-md">
-        <span class="px-3 py-1 text-[11px] rounded-full bg-gradient-to-r from-green-500 to-emerald-500 text-white font-medium shadow-sm shadow-green-300/40">Parking Management</span>
-        <span class="px-3 py-1 text-[11px] rounded-full bg-gradient-to-r from-green-500 to-emerald-500 text-white font-medium shadow-sm shadow-green-300/40">Smart Gate Access</span>
-      </div>
       <div class="absolute inset-0 rounded-3xl border-2 border-transparent group-hover:border-white/20 transition-all duration-500"></div>
       <div class="absolute inset-0 rounded-3xl bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 group-hover:opacity-100 animate-shine"></div>
     </div>
 
-    <!-- VisitorPass -->
+
     <div class="relative flex flex-col h-full rounded-3xl overflow-hidden border border-white/20 backdrop-blur-xl bg-white/30 shadow-lg transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl group">
       <div class="relative aspect-[4/3] overflow-hidden">
         <img src="./high-tech-travel-future-time.jpg" alt="VisitorPass" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" />
       </div>
       <div class="flex flex-col flex-grow p-6 relative z-10">
         <h3 class="text-xl sm:text-2xl font-medium text-gray-900 mb-3 transition-colors duration-300 group-hover:text-pink-600">
-          VisitorPass – Touchless Visitor Management
+          VisitorPass <span class="card-subtitle">Visitor Management</span>
         </h3>
         <ul class="list-disc list-inside text-base text-gray-700 font-light space-y-1 flex-grow">
           <li>Enable QR, facial or plate-based check-ins</li>
           <li>Maintain real-time visitor logs and analytics</li>
         </ul>
-      </div>
-      <div class="p-4 border-t border-white/20 flex flex-wrap gap-2 bg-white/50 backdrop-blur-md">
-        <span class="px-3 py-1 text-[11px] rounded-full bg-gradient-to-r from-pink-500 to-red-500 text-white font-medium shadow-sm shadow-pink-300/40">Face Recognition</span>
-        <span class="px-3 py-1 text-[11px] rounded-full bg-gradient-to-r from-pink-500 to-red-500 text-white font-medium shadow-sm shadow-pink-300/40">Visitor Management</span>
-        <span class="px-3 py-1 text-[11px] rounded-full bg-gradient-to-r from-pink-500 to-red-500 text-white font-medium shadow-sm shadow-pink-300/40">Smart Gate Access</span>
       </div>
       <div class="absolute inset-0 rounded-3xl border-2 border-transparent group-hover:border-white/20 transition-all duration-500"></div>
       <div class="absolute inset-0 rounded-3xl bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 group-hover:opacity-100 animate-shine"></div>
@@ -534,11 +527,155 @@ Want to see what’s possible?
 
 
 
+ -->
 
 
 
+<section id="solutions" class="py-20 px-6 bg-white relative">
+
+    <div class="text-center mb-14 underline-container" data-gsap>
+      <h2 class="text-3xl sm:text-4xl font-light text-black mb-4">
+        <span class="relative inline-block pb-3">
+          <span class="title-main">Solutions</span>
+          <span class="scroll-underline absolute left-0 bottom-0 h-[3px] w-full bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full"></span>
+        </span>
+        in Action
+      </h2>
+      <p class="text-gray-700 text-base sm:text-lg font-light max-w-2xl mx-auto">
+       From AI surveillance to autonomous robotics, these are just some of the powerful capabilities we offer — and we can do much more.
+      </p>
+    </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+
+    <!-- Card 1 -->
+    <div class="group flex flex-col h-[620px] rounded-3xl overflow-hidden border border-white/20 shadow-lg 
+                transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl 
+                bg-gradient-to-b from-white/30 to-white/10 backdrop-blur-xl">
+      <!-- Image -->
+      <div class="relative h-1/2 overflow-hidden transition-transform duration-500 group-hover:-translate-y-2">
+        <img src="./2uE8SHP-bKKwTPqKrQLfg.png" alt="KiDQ"
+             class="absolute inset-0 w-full h-full object-cover rounded-b-[60px] " />
+      </div>
+      <!-- Details -->
+      <div class="flex flex-col flex-1 p-8">
+        <h3 class="text-3xl font-medium text-gray-900 mb-3">
+          KiDQ
+          <span class="card-subtitle text-lg font-normal text-black block">Smart School Pickup</span>
+        </h3>
+        <ul class="text-lg text-gray-700 font-light space-y-3 mt-4">
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-blue-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M16.707 5.293a1 1 0 0 0-1.414 0L9 11.586 6.707 9.293a1 1 0 1 0-1.414 1.414l3 3a1 1 0 0 0 1.414 0l7-7a1 1 0 0 0 0-1.414z" />
+            </svg>
+            Accelerate and secure student dispersal
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-blue-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M16.707 5.293a1 1 0 0 0-1.414 0L9 11.586 6.707 9.293a1 1 0 1 0-1.414 1.414l3 3a1 1 0 0 0 1.414 0l7-7a1 1 0 0 0 0-1.414z" />
+            </svg>
+            Recognise vehicles and guardians automatically
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="group flex flex-col h-[620px] rounded-3xl overflow-hidden border border-white/20 shadow-lg 
+                transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl 
+                bg-gradient-to-b from-white/30 to-white/10 backdrop-blur-xl">
+      <div class="relative h-1/2 overflow-hidden transition-transform duration-500 group-hover:-translate-y-2">
+        <img src="./2151908090.jpg" alt="WatchTower"
+             class="absolute inset-0 w-full h-full object-cover rounded-b-[60px] " />
+      </div>
+      <div class="flex flex-col flex-1 p-8">
+        <h3 class="text-3xl font-medium text-gray-900 mb-3">
+          WatchTower
+          <span class="card-subtitle text-lg font-normal text-black block">AI Command Centre</span>
+        </h3>
+        <ul class="text-lg text-gray-700 font-light space-y-3 mt-4">
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-blue-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M16.707 5.293a1 1 0 0 0-1.414 0L9 11.586 6.707 9.293a1 1 0 1 0-1.414 1.414l3 3a1 1 0 0 0 1.414 0l7-7a1 1 0 0 0 0-1.414z" />
+            </svg>
+            Consolidate live video, patrol routes and alerts
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-blue-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M16.707 5.293a1 1 0 0 0-1.414 0L9 11.586 6.707 9.293a1 1 0 1 0-1.414 1.414l3 3a1 1 0 0 0 1.414 0l7-7a1 1 0 0 0 0-1.414z" />
+            </svg>
+            Automatically route tasks to field teams
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="group flex flex-col h-[620px] rounded-3xl overflow-hidden border border-white/20 shadow-lg 
+                transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl 
+                bg-gradient-to-b from-white/30 to-white/10 backdrop-blur-xl">
+      <div class="relative h-1/2 overflow-hidden transition-transform duration-500 group-hover:-translate-y-2">
+        <img src="./driving-night-touch-screen-controls-car-generated-by-ai.jpg" alt="GatePass"
+             class="absolute inset-0 w-full h-full object-cover rounded-b-[60px] " />
+      </div>
+      <div class="flex flex-col flex-1 p-8">
+        <h3 class="text-3xl font-medium text-gray-900 mb-3">
+          GatePass
+          <span class="card-subtitle text-lg font-normal text-black block">Smart Access & Parking</span>
+        </h3>
+        <ul class="text-lg text-gray-700 font-light space-y-3 mt-4">
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-blue-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M16.707 5.293a1 1 0 0 0-1.414 0L9 11.586 6.707 9.293a1 1 0 1 0-1.414 1.414l3 3a1 1 0 0 0 1.414 0l7-7a1 1 0 0 0 0-1.414z" />
+            </svg>
+            Verify license plates for authorised entry
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-blue-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M16.707 5.293a1 1 0 0 0-1.414 0L9 11.586 6.707 9.293a1 1 0 1 0-1.414 1.414l3 3a1 1 0 0 0 1.414 0l7-7a1 1 0 0 0 0-1.414z" />
+            </svg>
+            Track entry and exit in real time
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="group flex flex-col h-[620px] rounded-3xl overflow-hidden border border-white/20 shadow-lg 
+                transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl 
+                bg-gradient-to-b from-white/30 to-white/10 backdrop-blur-xl">
+      <div class="relative h-1/2 overflow-hidden transition-transform duration-500 group-hover:-translate-y-2">
+        <img src="./high-tech-travel-future-time.jpg" alt="VisitorPass"
+             class="absolute inset-0 w-full h-full object-cover rounded-b-[60px] " />
+      </div>
+      <div class="flex flex-col flex-1 p-8">
+        <h3 class="text-3xl font-medium text-gray-900 mb-3">
+          VisitorPass
+          <span class="card-subtitle text-lg font-normal text-black block"> Fast, Contactless Check-In</span>
+        </h3>
+        <ul class="text-lg text-gray-700 font-light space-y-3 mt-4">
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-blue-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M16.707 5.293a1 1 0 0 0-1.414 0L9 11.586 6.707 9.293a1 1 0 1 0-1.414 1.414l3 3a1 1 0 0 0 1.414 0l7-7a1 1 0 0 0 0-1.414z" />
+            </svg>
+            Enable QR, facial or plate‑based check‑ins
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-blue-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M16.707 5.293a1 1 0 0 0-1.414 0L9 11.586 6.707 9.293a1 1 0 1 0-1.414 1.414l3 3a1 1 0 0 0 1.414 0l7-7a1 1 0 0 0 0-1.414z" />
+            </svg>
+            Maintain real‑time visitor logs and analytics
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 
+
+ 
 
 <section id="spaces" class="py-10 px-6 bg-white text-[#111]">
   <div class="max-w-7xl mx-auto text-center mb-16 underline-container" data-gsap>
